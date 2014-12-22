@@ -1,7 +1,7 @@
 class cachedeps {
 
     vcsrepo { '/tmp/symfony-standard':
-        ensure   => 'present'
+        ensure   => 'present',
         provider => 'git',
         source   => 'https://github.com/symfony/symfony-standard.git',
         user     => 'vagrant',
@@ -13,6 +13,7 @@ class cachedeps {
         environment => 'HOME=/home/vagrant',
         cwd         => '/tmp/symfony-standard',
         path        => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
+        user     => 'vagrant',
         require     => [Vcsrepo['/tmp/symfony-standard']]
     }
 
