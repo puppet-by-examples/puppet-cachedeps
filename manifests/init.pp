@@ -15,10 +15,11 @@ class cachedeps {
     }
 
     exec { 'cachedeps-composer-install':
-        command => "composer install",
-        cwd     => "/tmp/symfony-standard",
-        path    => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
-        require => [File['/tmp/symfony-standard'], Exec['cachedeps-get-composer-json']]
+        command     => "composer install",
+        environment => 'HOME=/home/vagrant',
+        cwd         => "/tmp/symfony-standard",
+        path        => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
+        require     => [File['/tmp/symfony-standard'], Exec['cachedeps-get-composer-json']]
     }
 
     exec { 'cachedeps-rm':
