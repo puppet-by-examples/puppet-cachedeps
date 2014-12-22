@@ -1,0 +1,8 @@
+name    'gajdaw-cachedeps'
+version '0.1.0'
+source 'git://github.com/pro-vagrant/puppet-cachedeps.git'
+author ' Włodzimierz Gajda'
+license 'MIT'
+summary 'The module to cache composer deps'
+description 'The module to cache composer deps'
+project_page 'https://github.com/pro-vagrant/puppet-cachedeps'

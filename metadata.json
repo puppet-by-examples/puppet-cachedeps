@@ -1,0 +1,23 @@
+{
+  "name": "gajdaw-cachedeps",
+  "version": "0.1.0",
+  "author": "Włodzimierz Gajda",
+  "summary": "The module caches composer deps.",
+  "license": "MIT",
+  "source": "git@github.com:pro-vagrant/puppet-cachedeps.git",
+  "issues_url": "https://github.com/pro-vagrant/puppet-cachedeps/issues",
+  "project_page": "https://github.com/pro-vagrant/puppet-cachedeps",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04"
+      ]
+    }
+  ],
+  "requirements": [
+      { "name": "puppet", "version_requirement": "3.x" }
+  ],
+  "dependencies": []
+}
+
