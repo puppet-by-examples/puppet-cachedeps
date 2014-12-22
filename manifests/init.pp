@@ -17,7 +17,7 @@ class cachedeps {
     exec { 'cachedeps-composer-install':
         command => "composer install",
         cwd     => "/tmp/symfony-standard",
-        path    => '/usr/bin:/bin:/usr/sbin:/sbin',
+        path    => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
         require => [File['/tmp/symfony-standard'], Exec['cachedeps-get-composer-json']]
     }
 
