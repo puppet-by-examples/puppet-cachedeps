@@ -8,7 +8,7 @@ class cachedeps {
     }
 
     exec { 'cachedeps-get-composer-json':
-        command => "wget -O /tmp/symfony-standard/composer.json https://github.com/symfony/symfony-standard/blob/2.6/composer.json",
+        command => "wget -O /tmp/symfony-standard/composer.json https://raw.githubusercontent.com/symfony/symfony-standard/2.6/composer.json",
         path    => '/usr/bin:/bin:/usr/sbin:/sbin',
         onlyif  => 'test ! -f /tmp/symfony-standard/composer.json',
         require => File['/tmp/symfony-standard']
