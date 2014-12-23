@@ -13,7 +13,7 @@ class cachedeps {
         environment => 'HOME=/home/vagrant',
         cwd         => '/tmp/symfony-standard',
         path        => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
-        user     => 'vagrant',
+        user        => 'vagrant',
         require     => [Vcsrepo['/tmp/symfony-standard']]
     }
 
