@@ -9,7 +9,7 @@ class cachedeps {
     }
 
     exec { 'cachedeps-composer-install':
-        command     => 'composer install -q',
+        command     => 'composer install -q -n',
         environment => 'HOME=/home/vagrant',
         cwd         => '/tmp/symfony-standard',
         path        => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
