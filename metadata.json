@@ -5,8 +5,8 @@
   "summary": "The module caches composer deps.",
   "license": "MIT",
   "source": "git@github.com:pro-vagrant/puppet-cachedeps.git",
-  "issues_url": "https://github.com/pro-vagrant/puppet-cachedeps/issues",
-  "project_page": "https://github.com/pro-vagrant/puppet-cachedeps",
+  "issues_url": "https://github.com/puppet-by-examples/puppet-cachedeps/issues",
+  "project_page": "https://github.com/puppet-by-examples/puppet-cachedeps",
   "operatingsystem_support": [
     {
       "operatingsystem": "Ubuntu",
